@@ -2,6 +2,7 @@ import streamlit as st
 import requests
 from bs4 import BeautifulSoup
 
+#css to beautify 
 def inject_css():
     st.markdown(
         """
@@ -83,6 +84,8 @@ zodiac_signs = {
 
 # List of days
 days = ["yesterday", "today", "tomorrow"]
+
+#injecting the css before the streamlit ui
 inject_css()
 
 # Streamlit UI
